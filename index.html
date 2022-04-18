@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Dont please go anywhere</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+		body{
+			font-family: 'Quicksand', sans-serif;
+        }
+        .full{
+            height: 100vh;
+            width: 100vw;
+            max-width: 100vw;
+            object-fit: cover;
+            object-position: center;
+        }
+        .full-black{
+            height: 100%;
+            width: 100vw;
+            background-color: #000;
+            opacity: 0.5;
+            position: absolute;
+        }
+        .full-orange{
+            height: 100%;
+            width: 100vw;
+            background-color: #ffd900;
+            opacity: 1;
+            position: absolute;
+        }
+        .bg-orange{
+            background-color: #ffd900;
+        }
+        .credits{
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            z-index: 2;
+            text-align: right;
+        }
+        p{
+            font-size: 0.6rem;
+        }
+        p span{
+            font-weight: bolder;
+            font-size: 1rem;
+        }
+        .center-content{
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            transform: translate(-50%);
+            z-index: 2;
+        }
+        .img-content{
+            position: absolute;
+            height: 400px;
+            bottom: 0;
+            left: 50%;
+        }
+        .container-orange{
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+        @media only screen
+        and (max-device-width: 414px){
+            .img-content{
+                height: 290px;
+                max-height: 100%;
+                transform: translate(-50%);
+                bottom: unset;
+                top: 50%;
+            }
+    }
+	</style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 p-0">
+                <div class="container-orange bg-orange">
+                    <div class="pt-lg-5 pt-3 mt-lg-5 mt-3 pl-lg-5 ml-lg-5 pt-3 ml-3">
+                        <h1>
+                            Hukum adalah lembah hitam.<br>
+                            &nbsp; Tak mencerminkan keadilan
+                        </h1>
+                    </div>
+                    <p class="credits">
+                        <span>
+                            Alrights @hanandito on twitter
+                        </span><br>
+                            hananditos@gmail.com . 2021 
+                    </p>
+                    <img class="img-content" src="PngItem_2484175.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
