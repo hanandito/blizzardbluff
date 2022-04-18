@@ -1,108 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Dont please go anywhere</title>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <style>
-		body{
-			font-family: 'Quicksand', sans-serif;
-        }
-        .full{
-            height: 100vh;
-            width: 100vw;
-            max-width: 100vw;
-            object-fit: cover;
-            object-position: center;
-        }
-        .full-black{
-            height: 100%;
-            width: 100vw;
-            background-color: #000;
-            opacity: 0.5;
-            position: absolute;
-        }
-        .full-orange{
-            height: 100%;
-            width: 100vw;
-            background-color: #ffd900;
-            opacity: 1;
-            position: absolute;
-        }
-        .bg-orange{
-            background-color: #ffd900;
-        }
-        .credits{
-            position: absolute;
-            bottom: 15px;
-            right: 15px;
-            z-index: 2;
-            text-align: right;
-        }
-        p{
-            font-size: 0.6rem;
-        }
-        p span{
-            font-weight: bolder;
-            font-size: 1rem;
-        }
-        .center-content{
-            position: absolute;
-            top: 20%;
-            left: 20%;
-            transform: translate(-50%);
-            z-index: 2;
-        }
-        .img-content{
-            position: absolute;
-            height: 400px;
-            bottom: 0;
-            left: 50%;
-        }
-        .container-orange{
-            height: 100vh;
-            width: 100vw;
-            overflow: hidden;
-        }
-        @media only screen
-        and (max-device-width: 414px){
-            .img-content{
-                height: 290px;
-                max-height: 100%;
-                transform: translate(-50%);
-                bottom: unset;
-                top: 50%;
-            }
-    }
-	</style>
+  <title>Blizzard Bluff | Crash Team Racing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 p-0">
-                <div class="container-orange bg-orange">
-                    <div class="pt-lg-5 pt-3 mt-lg-5 mt-3 pl-lg-5 ml-lg-5 pt-3 ml-3">
-                        <h1>
-                            Hukum adalah lembah hitam.<br>
-                            &nbsp; Tak mencerminkan keadilan
-                        </h1>
-                    </div>
-                    <p class="credits">
-                        <span>
-                            Alrights @hanandito on twitter
-                        </span><br>
-                            hananditos@gmail.com . 2021 
-                    </p>
-                    <img class="img-content" src="PngItem_2484175.png" alt="">
-                </div>
-            </div>
-        </div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap 4 Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>About Me</h2>
+      <h5>Photo of me:</h5>
+      <div class="fakeimg">Fake Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h3>Some Links</h3>
+      <p>Lorem ipsum dolor sit ame.</p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <div class="col-sm-8">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg">Fake Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <br>
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg">Fake Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Footer</p>
+</div>
+
 </body>
 </html>
